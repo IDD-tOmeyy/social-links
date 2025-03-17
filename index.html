@@ -3,50 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Icons</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Social Media Links</title>
+    <style>
+        /* Dein kompletter CSS Code */
+        .main_back {
+            position: absolute;
+            border-radius: 10px;
+            transform: rotate(90deg);
+            width: 11em;
+            height: 11em;
+            background: linear-gradient(270deg, #03a9f4, #cc39a4, #ffb5d2);
+            z-index: -2;
+            box-shadow: inset 0px 0px 180px 5px #ffffff;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            width: 14em;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-top-left-radius: 10px;
+            background: lightgrey;
+            transition: 0.4s ease-in-out;
+            background: rgba(255, 255, 255, 0.596);
+            backdrop-filter: blur(5px);
+            border: 1px solid transparent;
+            -webkit-backdrop-filter: blur(5px);
+        }
+        .card:hover {
+            background-color: #ccc;
+        }
+        /* Weitere CSS-Regeln fügen wir hier ein... */
+    </style>
 </head>
 <body>
-
-    <!-- Social Media Icons Container -->
     <div class="main">
         <div class="card">
-            <svg class="instagram" height="30px" width="30px" viewBox="0,0,256,256">
-                <!-- Dein SVG-Code hier -->
+            <svg height="30px" width="30px" viewBox="0,0,256,256">
+                <circle cx="50" cy="50" r="40" fill="#cc39a4" />
             </svg>
         </div>
         <div class="card">
-            <svg class="twitter" height="30px" width="30px" viewBox="0 0 48 48">
-                <!-- Dein SVG-Code hier -->
-            </svg>
-        </div>
-        <div class="card">
-            <svg class="whatsapp" height="30px" width="30px" viewBox="0 0 48 48">
-                <!-- Dein SVG-Code hier -->
-            </svg>
-        </div>
-        <div class="card">
-            <svg class="facebook" height="30px" width="30px" viewBox="0 0 48 48">
-                <!-- Dein SVG-Code hier -->
-            </svg>
-        </div>
-        <div class="card">
-            <svg class="idd" height="30px" width="30px" viewBox="0 0 48 48">
-                <!-- IDD-Logo als SVG -->
-                <text x="5" y="30" font-size="20" fill="white" font-family="Poppins">IDD</text>
-            </svg>
-        </div>
-        <div class="card">
-            <svg class="linkedin" height="30px" width="30px" viewBox="0 0 48 48">
-                <!-- Dein SVG-Code hier -->
-            </svg>
-        </div>
-        <div class="card">
-            <svg class="youtube" height="30px" width="30px" viewBox="0 0 48 48">
-                <!-- Dein SVG-Code hier -->
+            <svg height="30px" width="30px" viewBox="0 0 48 48">
+                <circle cx="50" cy="50" r="40" fill="#03a9f4" />
             </svg>
         </div>
     </div>
-
 </body>
 </html>
